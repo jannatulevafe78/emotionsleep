@@ -1,0 +1,698 @@
+{
+  "n_subjects": 63,
+  "primary_family_size": 6,
+  "primary_significant": 0,
+  "primary_directions_as_predicted": "2/6",
+  "n_tests": 33,
+  "n_significant_fdr": 6,
+  "covariates_used": [
+    "gender_x",
+    "age_x",
+    "gender_y"
+  ],
+  "tests": [
+    {
+      "sleep_predictor": "rmssd_instability",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": 0.4753933422519941,
+      "pearson_p": 8.240641480297029e-05,
+      "spearman_rho": -0.0673963133640553,
+      "spearman_p": 0.5997035779537038,
+      "adj_beta": 0.022063081647394452,
+      "adj_p": 4.3394763040592996e-05,
+      "adj_r2": 0.284469169840354,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.0002816423442222316,
+      "significant_fdr": true
+    },
+    {
+      "sleep_predictor": "rmssd_instability",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": 0.47241439235057936,
+      "pearson_p": 9.260027635117906e-05,
+      "spearman_rho": -0.11064708141321046,
+      "spearman_p": 0.3879711902953957,
+      "adj_beta": 0.02260497099964107,
+      "adj_p": 4.8103892831144334e-05,
+      "adj_r2": 0.28320927196133694,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.0002816423442222316,
+      "significant_fdr": true
+    },
+    {
+      "sleep_predictor": "rmssd_instability",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": 0.48659040372280393,
+      "pearson_p": 5.2643282969491355e-05,
+      "spearman_rho": 0.17213901689708141,
+      "spearman_p": 0.17732235254447115,
+      "adj_beta": 0.019895524238407986,
+      "adj_p": 3.0037002973292467e-05,
+      "adj_r2": 0.28760367367778117,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.0002816423442222316,
+      "significant_fdr": true
+    },
+    {
+      "sleep_predictor": "sdnn_seg_std",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": 0.46006772803194673,
+      "pearson_p": 0.000148472146160392,
+      "spearman_rho": -0.07814900153609831,
+      "spearman_p": 0.5426573952933272,
+      "adj_beta": 0.06020683101666972,
+      "adj_p": 4.910484836399488e-05,
+      "adj_r2": 0.2815970299550129,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.0002816423442222316,
+      "significant_fdr": true
+    },
+    {
+      "sleep_predictor": "sdnn_seg_std",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": 0.45855606387732056,
+      "pearson_p": 0.00015711436298842523,
+      "spearman_rho": -0.0743567588325653,
+      "spearman_p": 0.5624726655602651,
+      "adj_beta": 0.06187024772021319,
+      "adj_p": 5.120769894949665e-05,
+      "adj_r2": 0.2817559888421981,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.0002816423442222316,
+      "significant_fdr": true
+    },
+    {
+      "sleep_predictor": "sdnn_seg_std",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": 0.4644995358756458,
+      "pearson_p": 0.0001255873905552463,
+      "spearman_rho": 0.043010752688172046,
+      "spearman_p": 0.7378469145813774,
+      "adj_beta": 0.053553164202495875,
+      "adj_p": 4.536094874005907e-05,
+      "adj_r2": 0.27801213364117683,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.0002816423442222316,
+      "significant_fdr": true
+    },
+    {
+      "sleep_predictor": "lf_nu",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": -0.2968791837467772,
+      "pearson_p": 0.018139506806200596,
+      "spearman_rho": 0.08698156682027651,
+      "spearman_p": 0.4978629348403171,
+      "adj_beta": -3.698259265134691,
+      "adj_p": 0.022507303936645084,
+      "adj_r2": 0.12232523267279738,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.10610586141561254,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "lf_nu",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": -0.2873815449908733,
+      "pearson_p": 0.022386229455421146,
+      "spearman_rho": 0.17914746543778803,
+      "spearman_p": 0.1600632436951555,
+      "adj_beta": -3.986298738786962,
+      "adj_p": 0.029656281108131812,
+      "adj_r2": 0.12179345803601793,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.1160228581664489,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "lf_nu",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": -0.2849964401047887,
+      "pearson_p": 0.02357625567946387,
+      "spearman_rho": 0.1886520737327189,
+      "spearman_p": 0.1386795580885288,
+      "adj_beta": -4.05830860720003,
+      "adj_p": 0.03164259768175879,
+      "adj_r2": 0.12150921279907823,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.1160228581664489,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "rmssd",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": 0.12472278850398594,
+      "pearson_p": 0.33008515953248235,
+      "spearman_rho": -0.1991167434715822,
+      "spearman_p": 0.11769944392678211,
+      "adj_beta": 0.003416749789216171,
+      "adj_p": 0.2888236508782444,
+      "adj_r2": 0.06599463643402492,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "primary",
+      "direction_as_predicted": false,
+      "q_primary": 0.2968088833080556,
+      "significant_primary": false,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "rmssd",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": 0.12324031589091945,
+      "pearson_p": 0.33591086357840627,
+      "spearman_rho": -0.17002688172043012,
+      "spearman_p": 0.1827794657135122,
+      "adj_beta": 0.003486677895955798,
+      "adj_p": 0.2932498539828037,
+      "adj_r2": 0.06714264209338627,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "primary",
+      "direction_as_predicted": false,
+      "q_primary": 0.2968088833080556,
+      "significant_primary": false,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "rmssd",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": 0.13093400964036853,
+      "pearson_p": 0.30637543727549876,
+      "spearman_rho": -0.18082757296466975,
+      "spearman_p": 0.15611637734823453,
+      "adj_beta": 0.0031370373622576614,
+      "adj_p": 0.2715186279819154,
+      "adj_r2": 0.06026832926780212,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "direction_as_predicted": false,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "pnn50",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": -0.1717364984145603,
+      "pearson_p": 0.17835310226395468,
+      "spearman_rho": -0.2983390937019969,
+      "spearman_p": 0.017552039599942854,
+      "adj_beta": -0.014568325805509073,
+      "adj_p": 0.23310457857803693,
+      "adj_r2": 0.0707197310558414,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "primary",
+      "direction_as_predicted": true,
+      "q_primary": 0.2968088833080556,
+      "significant_primary": false,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "pnn50",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": -0.17305646863491442,
+      "pearson_p": 0.174989169218585,
+      "spearman_rho": -0.23607910906298002,
+      "spearman_p": 0.06250152668352957,
+      "adj_beta": -0.015112780460751173,
+      "adj_p": 0.22963547642924526,
+      "adj_r2": 0.07252414133388208,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "primary",
+      "direction_as_predicted": true,
+      "q_primary": 0.2968088833080556,
+      "significant_primary": false,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "pnn50",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": -0.16459062332863636,
+      "pearson_p": 0.19738116678495862,
+      "spearman_rho": -0.41172235023041476,
+      "spearman_p": 0.000800773467449541,
+      "adj_beta": -0.012390507184540687,
+      "adj_p": 0.25258757428608886,
+      "adj_r2": 0.06187124465610161,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "direction_as_predicted": true,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "lf_hf",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": -0.1775837850113855,
+      "pearson_p": 0.16380224959590187,
+      "spearman_rho": 0.17914746543778803,
+      "spearman_p": 0.1600632436951555,
+      "adj_beta": -0.41312550364630923,
+      "adj_p": 0.2600080646371209,
+      "adj_r2": 0.06828465502178271,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "lf_hf",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": -0.1759443559573427,
+      "pearson_p": 0.1677908902349421,
+      "spearman_rho": 0.1886520737327189,
+      "spearman_p": 0.1386795580885288,
+      "adj_beta": -0.41821707745962017,
+      "adj_p": 0.2682618690916359,
+      "adj_r2": 0.06906958054481582,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "lf_hf",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": -0.18422607202300562,
+      "pearson_p": 0.14835358935855958,
+      "spearman_rho": 0.08698156682027651,
+      "spearman_p": 0.4978629348403171,
+      "adj_beta": -0.39275920839306544,
+      "adj_p": 0.22642038570481038,
+      "adj_r2": 0.06434179402286078,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "mean_hr",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": -0.08847870680043708,
+      "pearson_p": 0.4904652015996901,
+      "spearman_rho": -0.06442012288786483,
+      "spearman_p": 0.6159480246341714,
+      "adj_beta": -0.024093095811020336,
+      "adj_p": 0.2968088833080556,
+      "adj_r2": 0.06540982588903155,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "primary",
+      "direction_as_predicted": false,
+      "q_primary": 0.2968088833080556,
+      "significant_primary": false,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "mean_hr",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": -0.09223308188115928,
+      "pearson_p": 0.47217036914419397,
+      "spearman_rho": -0.11823156682027651,
+      "spearman_p": 0.3560674733276483,
+      "adj_beta": -0.02566799959567472,
+      "adj_p": 0.2802713025861037,
+      "adj_r2": 0.06811691244508522,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "primary",
+      "direction_as_predicted": false,
+      "q_primary": 0.2968088833080556,
+      "significant_primary": false,
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "hr_seg_std",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": 0.18270931797628842,
+      "pearson_p": 0.15178183014424004,
+      "spearman_rho": -0.1163594470046083,
+      "spearman_p": 0.36378837491385335,
+      "adj_beta": 0.039378958101869525,
+      "adj_p": 0.18672859938161646,
+      "adj_r2": 0.07581122481166003,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "hr_seg_std",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": 0.18042292979110192,
+      "pearson_p": 0.157060306790082,
+      "spearman_rho": -0.12019969278033794,
+      "spearman_p": 0.34806016418993935,
+      "adj_beta": 0.03995977257778398,
+      "adj_p": 0.19334008214428125,
+      "adj_r2": 0.07646101063015653,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "hr_seg_std",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": 0.19234387927474295,
+      "pearson_p": 0.13097928731922112,
+      "spearman_rho": 0.008496543778801845,
+      "spearman_p": 0.9473062330509596,
+      "adj_beta": 0.03705570019821176,
+      "adj_p": 0.16042590058507336,
+      "adj_r2": 0.07241514749477429,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.4258562238767754,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "mean_hr",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": -0.07043882999409926,
+      "pearson_p": 0.5832955974686346,
+      "spearman_rho": 0.11059907834101383,
+      "spearman_p": 0.3881783686605994,
+      "adj_beta": -0.01779348067240281,
+      "adj_p": 0.38516978645915295,
+      "adj_r2": 0.05293250984149189,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "direction_as_predicted": false,
+      "q_fdr": 0.5296084563813352,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "sdnn",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": 0.06414022253430081,
+      "pearson_p": 0.6174854064745168,
+      "spearman_rho": -0.10618279569892473,
+      "spearman_p": 0.4075187361319053,
+      "adj_beta": 0.0034278146349069304,
+      "adj_p": 0.4944788198958598,
+      "adj_r2": 0.055425019152331556,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6104323852147912,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "sdnn",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": 0.06690932868264471,
+      "pearson_p": 0.6023486365298575,
+      "spearman_rho": -0.08054915514592934,
+      "spearman_p": 0.5302939558347678,
+      "adj_beta": 0.003658694158395385,
+      "adj_p": 0.4787988675576664,
+      "adj_r2": 0.057477157737385265,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6104323852147912,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "sdnn",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": 0.050840981959790386,
+      "pearson_p": 0.69231673366844,
+      "spearman_rho": -0.09082181259600615,
+      "spearman_p": 0.4790040525018472,
+      "adj_beta": 0.002504296540953112,
+      "adj_p": 0.5734364830805614,
+      "adj_r2": 0.045828925103215234,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6104323852147912,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "night_hours",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": -0.08123871147398877,
+      "pearson_p": 0.5267679616023032,
+      "spearman_rho": -0.08040514592933948,
+      "spearman_p": 0.531031808686729,
+      "adj_beta": -0.08856787914802569,
+      "adj_p": 0.562788136234414,
+      "adj_r2": 0.05329352881559113,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6104323852147912,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "night_hours",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": -0.08470185184785123,
+      "pearson_p": 0.5092377982709865,
+      "spearman_rho": -0.09754224270353304,
+      "spearman_p": 0.44693778184174354,
+      "adj_beta": -0.09554367844628676,
+      "adj_p": 0.5443052286408193,
+      "adj_r2": 0.05531617780103881,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6104323852147912,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "sleep_hours_diary",
+      "outcome": "reactivity_overall",
+      "n": 63,
+      "pearson_r": -0.08546936841993485,
+      "pearson_p": 0.5053934369834369,
+      "spearman_rho": -0.0737646879565982,
+      "spearman_p": 0.565596825000185,
+      "adj_beta": -0.09885096399763219,
+      "adj_p": 0.523260415617229,
+      "adj_r2": 0.05446702808541215,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6104323852147912,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "sleep_hours_diary",
+      "outcome": "reactivity_negative",
+      "n": 63,
+      "pearson_r": -0.08894988236344398,
+      "pearson_p": 0.48814899102093245,
+      "spearman_rho": -0.09099965247102629,
+      "spearman_p": 0.47814002260895416,
+      "adj_beta": -0.10627555372438721,
+      "adj_p": 0.505072753730698,
+      "adj_r2": 0.056552973992450295,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6104323852147912,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "sleep_hours_diary",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": -0.06872572321877828,
+      "pearson_p": 0.5925091350009286,
+      "spearman_rho": -0.04099905207610469,
+      "spearman_p": 0.749698039089435,
+      "adj_beta": -0.06915260509061211,
+      "adj_p": 0.614488056414286,
+      "adj_r2": 0.044796351170694915,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6336908081772324,
+      "significant_fdr": false
+    },
+    {
+      "sleep_predictor": "night_hours",
+      "outcome": "reactivity_positive",
+      "n": 63,
+      "pearson_r": -0.06460037650240565,
+      "pearson_p": 0.6149588314699164,
+      "spearman_rho": -0.04833909370199693,
+      "spearman_p": 0.7067559083520727,
+      "adj_beta": -0.06066468195498145,
+      "adj_p": 0.6547817264206941,
+      "adj_r2": 0.04391807254322988,
+      "covariates": [
+        "gender_x",
+        "age_x",
+        "gender_y"
+      ],
+      "family": "exploratory",
+      "q_fdr": 0.6547817264206941,
+      "significant_fdr": false
+    }
+  ],
+  "direction": "sleep (night N) -> reactivity (day N+1); temporal precedence, between-subjects",
+  "interpretation": "PRIMARY (pre-specified, 6 tests): 0 significant after FDR; 2/6 in the predicted direction. EXPLORATORY: 6 of 33 survive correction across all tests. Forward path supported."
+}

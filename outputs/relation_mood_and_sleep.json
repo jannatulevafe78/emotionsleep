@@ -1,0 +1,228 @@
+{
+  "n_subjects": 65,
+  "primary_family_size": 0,
+  "primary_significant": 0,
+  "primary_directions_as_predicted": "0/0",
+  "n_tests": 24,
+  "n_significant_fdr": 0,
+  "tests": [
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "sdnn",
+      "n": 64,
+      "pearson_r": -0.04094447561739828,
+      "pearson_p": 0.7480325449618237,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "rmssd",
+      "n": 64,
+      "pearson_r": 0.007498664959494965,
+      "pearson_p": 0.9531052104107693,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "lf_hf",
+      "n": 64,
+      "pearson_r": -0.04222942332495275,
+      "pearson_p": 0.7403991788867033,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "mean_hr",
+      "n": 64,
+      "pearson_r": -0.16263909538365898,
+      "pearson_p": 0.19912881792437198,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_global",
+      "n": 64,
+      "pearson_r": 0.29660635405831964,
+      "pearson_p": 0.017316912086956626,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_quality",
+      "n": 64,
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_latency",
+      "n": 64,
+      "pearson_r": 0.199822699816867,
+      "pearson_p": 0.11340170394989935,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_duration",
+      "n": 64,
+      "pearson_r": 0.17612537693149713,
+      "pearson_p": 0.16387930796299177,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_efficiency",
+      "n": 64,
+      "pearson_r": 0.14676063859920993,
+      "pearson_p": 0.24718097198179534,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_disorders",
+      "n": 64,
+      "pearson_r": -0.12445157974188409,
+      "pearson_p": 0.32718198788996267,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_hypnotic",
+      "n": 64,
+      "pearson_r": 0.20272861926677577,
+      "pearson_p": 0.1081431042163346,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "sds_score",
+      "sleep_measure": "psqi_daytime",
+      "n": 64,
+      "pearson_r": 0.04928886511479572,
+      "pearson_p": 0.6989230833557765,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "sdnn",
+      "n": 64,
+      "pearson_r": 0.004881657310692102,
+      "pearson_p": 0.9694614369622375,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "rmssd",
+      "n": 64,
+      "pearson_r": -0.09029242825943892,
+      "pearson_p": 0.4779807438199722,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "lf_hf",
+      "n": 64,
+      "pearson_r": 0.14926892512645537,
+      "pearson_p": 0.23910582887344817,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "mean_hr",
+      "n": 64,
+      "pearson_r": -0.027585652327042035,
+      "pearson_p": 0.8286940266772229,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_global",
+      "n": 64,
+      "pearson_r": -0.009690920223216165,
+      "pearson_p": 0.9394182113122266,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_quality",
+      "n": 64,
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_latency",
+      "n": 64,
+      "pearson_r": 0.07629463134994947,
+      "pearson_p": 0.5490383292951424,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_duration",
+      "n": 64,
+      "pearson_r": 0.039926521087279,
+      "pearson_p": 0.7540970057326127,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_efficiency",
+      "n": 64,
+      "pearson_r": -0.06531436532274616,
+      "pearson_p": 0.6081159662705309,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_disorders",
+      "n": 64,
+      "pearson_r": -0.1607452772173832,
+      "pearson_p": 0.20448139305790758,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_hypnotic",
+      "n": 64,
+      "pearson_r": 0.06907556574367352,
+      "pearson_p": 0.5875693942119232,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    },
+    {
+      "mood_measure": "poms_depression",
+      "sleep_measure": "psqi_daytime",
+      "n": 64,
+      "pearson_r": 0.07189119726552484,
+      "pearson_p": 0.5723965458272935,
+      "q_fdr": NaN,
+      "significant_fdr": false
+    }
+  ],
+  "design_caveat": "CROSS-SECTIONAL. Mood and sleep measured at the same timepoint. Direction is not identified; this cannot support 'emotion causes poor sleep'.",
+  "interpretation": "0/24 associations survive FDR. Interpret as association only."
+}

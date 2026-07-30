@@ -1,0 +1,112 @@
+# =====================================================================
+# Emotion-Aware Sleep EEG  --  central config
+# Tuned for: 16 GB RAM, <=6 GB VRAM, offline execution
+# =====================================================================
+
+seed: 42
+device: cuda          # falls back to cpu automatically
+amp: true             # mixed precision -- halves VRAM
+
+paths:
+  raw: data/raw
+  proc: data/proc
+  out: outputs
+
+# ---------------- Signal preprocessing ----------------
+signal:
+  sfreq: 100          # resample everything to 100 Hz
+  epoch_sec: 30       # sleep-staging standard
+  bandpass: [0.5, 45.0]
+  notch: 50.0         # set to 60.0 for US recordings
+  sfreq_ecg: 128      # resample ECG to this
+  bandpass_ecg: [0.5, 40.0]
+  clip_sigma: 20.0    # hard clip after z-scoring (artifact guard)
+
+# ---------------- Sleep-EDF (stage A: SSL pretrain + staging) --------
+sleepedf:
+  n_subjects: 20      # 20 subjects ~= 1 GB. Raise if disk allows.
+  channels: ["EEG Fpz-Cz", "EEG Pz-Oz"]
+  # R&K -> AASM merge: stage 3 and 4 collapse to N3
+  stage_map: {"Sleep stage W": 0, "Sleep stage 1": 1, "Sleep stage 2": 2,
+              "Sleep stage 3": 3, "Sleep stage 4": 3, "Sleep stage R": 4}
+  # keep only +/- 30 min of wake around the sleep period (standard practice,
+  # otherwise W dominates ~60% of epochs and every metric is meaningless)
+  crop_wake_min: 30
+
+# ---------------- ds004902 (stage B: sleep-deprivation -> affect) ----
+sleepdep:
+  sfreq: 100
+  window_sec: 20      # matches published analyses on this dataset
+  overlap: 0.0
+  target: condition   # 'condition' (NS vs SD) | 'panas_neg' | 'sss'
+
+# ---------------- Self-supervised pretraining ----------------
+ssl:
+  method: simclr      # simclr | ts2vec_lite
+  epochs: 30
+  batch_size: 128
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  temperature: 0.2
+  proj_dim: 128
+  augment:
+    jitter_sigma: 0.05
+    scale_range: [0.8, 1.2]
+    mask_frac: 0.15
+    crop_frac: 0.85
+    flip_prob: 0.3
+
+# ---------------- Supervised training ----------------
+train:
+  epochs: 40
+  batch_size: 64
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+  label_smoothing: 0.05
+  focal_gamma: 2.0
+  class_weighting: inverse_freq
+  early_stop_patience: 8
+  scheduler: cosine
+  warmup_epochs: 2
+  grad_clip: 1.0
+
+# ---------------- Cross-validation ----------------
+cv:
+  scheme: group_kfold   # group_kfold | loso
+  n_folds: 5
+  group_by: subject     # NEVER random-split EEG epochs
+
+# ---------------- Models to run ----------------
+models:
+  - cnn1d
+  - crnn
+  - transformer
+  - gnn
+  - fusion
+
+# ---------------- slpdb (MIT-BIH Polysomnographic) ----------------
+slpdb:
+  signal: ECG         # ECG | both  (both = ECG+EEG where available)
+  epoch_sec: 30
+
+# ---------------- noneeg (stress / affect states) ----------------
+noneeg:
+  sfreq: 8            # wrist sensors are slow; 8 Hz is plenty
+  window_sec: 30
+  overlap: 0.5
+
+# ---------------- cross-lagged panel (hrvsleep) ----------------
+crosslag:
+  daytime: [9, 23]    # device-worn window validated by the dataset authors
+  min_segments: 6     # 5-min segments required for a usable person-day
+  sleep_var: null     # null = auto-pick (sleep_efficiency preferred)
+  affect_var: null    # null = auto-pick (rmssd preferred)
+
+# ---------------- ECSMP (primary dataset) ----------------
+ecsmp:
+  sfreq: 128          # resample emotion signals to this
+  sfreq_hint: 250     # assumed original rate when a file has no header
+  epoch_sec: 4        # emotion epoch length
+  max_channels: 10    # ECSMP has 10 EEG channels
+  drop_first_sec: 10  # discard clip onset
+  baseline_class: 0   # 'neutral' is the within-subject baseline

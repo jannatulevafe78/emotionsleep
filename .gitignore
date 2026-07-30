@@ -1,0 +1,11 @@
+﻿.venv/
+__pycache__/
+*.pyc
+data/
+*.npy
+*.npz
+*.bin
+*.mat
+probe*.py
+patch.py
+apply_fix*.py
